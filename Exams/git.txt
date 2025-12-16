@@ -1,0 +1,36 @@
+// اقدامات اولیه
+git init
+git config --global user.email xxx@gmail.com
+git config --global user.name xxx
+
+// وقتی که از قبل چیزی در ریموت دارید
+git remote add [remoteName] [remoteURL]
+git pull [remoteName] [branchName]
+git checkout [branchName]
+... your coding here ...
+git add .
+git commit -m "message"
+git push [remoteName] [branchName]
+
+git remote add origin https://github.com/username/web1404term1.git
+git pull origin main
+git checkout main
+... your coding here ...
+git add .
+git commit -m "message"
+git push origin branchName
+
+// وقتی که ریموت خالی است - اولین بار
+git remote add [remoteName] [remoteURL]
+git checkout -b [branchName]
+... your coding here ...
+git add .
+git commit -m "message"
+git push [remoteName] [branchName]
+
+git remote add origin https://github.com/username/web1404term1.git
+git checkout -b main
+... your coding here ...
+git add .
+git commit -m "message"
+git push origin web1404term1
